@@ -2,7 +2,7 @@ import Charity from "../css/Charity.css"
 import buildingicon from "../images/building-icon.png"
 
 
-function CharityCard({name, image, title, daysleft, completeness, description}) {
+function CharityCard({image, title, daysleft, completeness, description}) {
   
   return (
     <div className="education-card">
