@@ -1,5 +1,5 @@
 import React from 'react'
-import { ActivityButtons, ReadMoreButton } from './ButtonComponents'
+import { ActivityButtons, ActionButton } from './ButtonComponents'
 import { ProfileHeaderComponentStyles, NiceComponentWhichIsVeryNice } from './ComponentStyles'
 
 const ProfileHeaderComponent = () => {
@@ -54,7 +54,6 @@ const ProfileHeaderComponent = () => {
 } color={"#709E9B"}></ActivityButtons>
                 <ActivityButtons text={"Education"} icon={"water.svg"} color={"#EDCBB1"}></ActivityButtons>
                 <ActivityButtons text={"Other"} icon={"water.svg"} color={"#E2E2E8"}></ActivityButtons>
-                {/* <ReadMoreButton></ReadMoreButton> */}
                 </div>
         </div>
     )
