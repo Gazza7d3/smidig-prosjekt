@@ -1,25 +1,48 @@
-import logo from "./logo.svg";
-import "./App.css";
+import CharityCard from "./Components/CharityCard";
+import SmallCharityCard from "./Components/SmallCharityCard";
+import icon from "./images/icon.jpeg"
+import icon2 from "./images/bk.webp"
+import ProfileHeaderComponent from "./Components/ProfileHeaderComponent";
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display: "flex", flex: 1, justifyContent: "center"}}>
+      <SmallCharityCard {...mySmallElement}/>
+      <ProfileHeaderComponent></ProfileHeaderComponent>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+/* Charity Card Info */
+
+
+//<CharityCard {...myElement}/> 
+const myElement = {
+  title: "Education 4All",
+  description: "Our donation goal of building 10 more schools in Africa has been achieved. Meloria Impact are grateful for all...",
+  daysleft: 11,
+  completeness: 3,
+  image: icon
+};
+
+const mySmallElement = { 
+  title: "Building a water well in Kajone’n",
+  description: "Kajone’n in West Africa needs a new water well for its inhabitants",
+  moneygoal: 20000,
+  moneyraised: 3500,
+  image: icon2
+};

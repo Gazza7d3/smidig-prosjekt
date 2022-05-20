@@ -1,0 +1,198 @@
+.education-card {
+display: flex;
+flex-direction: column;
+align-items:center;
+padding: 0px;
+
+position: absolute;
+width: 312px;
+height: 674px;
+
+background: #fff3f3;
+box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.06);
+border-radius: 10px;
+}
+
+.image {
+width: 312px;
+height: 300px;
+
+background: #FFFFFF;
+border-radius: 10px 10px 0px 0px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.card-title {
+width: 198px;
+height: 34px;
+
+font-family: 'Euclid Circular B';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 120%;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.card-description {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin: 0px;
+padding: 0px;
+gap: 16px;
+
+width: 264px;
+height: 193px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.button {
+    /* Button */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+gap: 8px;
+
+width: 264px;
+height: 50px;
+
+/* Black / Black4 (83) */
+
+border: 1px solid #CDD1D4;
+border-radius: 28px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+flex-grow: 0;
+
+font-family: 'Euclid Circular B';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 100%;
+}
+
+.daysleft {
+    /* 10 Days left */
+
+
+position: absolute;
+width: 115px;
+height: 20px;
+left: 24px;
+top: 256px;
+
+font-family: 'Euclid Circular B';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 100%;
+/* identical to box height, or 20px */
+
+
+color: #FFFFFF;
+}
+
+/* Bar */
+.greybar {
+position: absolute;
+width: 264px;
+height: 12px;
+
+top: 552px;
+
+background: #ECECEC;
+border-radius: 10px;
+}
+
+.colorbar { /* 85% er full bar. Så kanskje en prop kan være verdi minus 15% */
+position: absolute;
+/* width: 85% */
+width: 204px;
+height: 12px;
+top: 552px;
+right: 85px;
+
+background: linear-gradient(270deg, #EDCBB1 -21.94%, #709E9B 82.37%);
+border-radius: 10px;
+}
+
+.readmore {
+   /* Read more */
+
+
+width: 264px;
+height: 22px;
+
+/* Medium / Semi 135% */
+
+font-family: 'Euclid Circular B';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 135%;
+/* identical to box height, or 22px */
+
+
+color: #03A8F7;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0; 
+}
+
+
+.stats {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px 10px 0px 10px;
+gap: 10px;
+
+width: 205px;
+height: 24px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.buildingicon {
+    position: absolute;
+    width: 264px;
+    height: 12px;
+    right: 300px;
+    padding: 0px;
+    background-color: #03A8F7;
+    top: 532px;
+}

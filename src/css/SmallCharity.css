@@ -1,0 +1,118 @@
+.education-card {
+display: flex;
+flex-direction:row;
+align-items: flex-start;
+padding: 16px;
+gap: 10px;
+
+width: 480px;
+height: 160px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.image {
+    width: 128px;
+    height: 128px;
+    
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card-title {
+    width: 354px;
+    height: 24px;
+    
+    font-family: 'Euclid Circular B';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    /* identical to box height, or 24px */
+    
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card-description {
+    position: absolute;
+    width: 276px;
+    height: 36px;
+    
+    font-family: 'Euclid Circular B';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    left: 155px;
+    top: 60px;
+    /* or 18px */
+    
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.colorbar { /* 85% er full bar. Så kanskje en prop kan være verdi minus 15% */
+    position: absolute;
+    width: 144px;
+    height: 9px;
+    left: 160px;
+    top: 150px;
+    
+    background: linear-gradient(270deg, #EDCBB1 -21.94%, #709E9B 82.37%);
+    border-radius: 10px;
+}
+
+.greybar {
+    position: absolute;
+width: 307px;
+height: 9px;
+left: 160px;
+top: 150px;
+
+background: #ECECEC;
+border-radius: 10px;
+}
+
+.moneyraised {
+margin: 0;
+padding: 0;
+width: 237px;
+height: 19px;
+
+font-family: 'Euclid Circular B';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+
+
+
+
+color: #709E9B;
+}
