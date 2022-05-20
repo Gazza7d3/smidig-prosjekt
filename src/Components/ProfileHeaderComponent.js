@@ -6,7 +6,7 @@ const ProfileHeaderComponent = () => {
             <div style={ProfileHeaderComponentStyles.headerImageStyle}></div>
             <div style={ProfileHeaderComponentStyles.profileContent}>
                 <div style={{display: "flex", flexDirection: "row"}}>
-                    <div style={{backgroundColor: "blue", display: "flex", flex: 1, flexDirection: "column"}}>
+                    <div style={{display: "flex", flex: 1, flexDirection: "column"}}>
                         <img style={{height: 100}} src='../../assets/images/company-logo/volkswagen-logo.png' alt=""/>
                         <p style={{fontSize: 25, alignSelf: "center"}}>Volkswagen</p>
                     </div>
@@ -55,8 +55,7 @@ const ProfileHeaderComponentStyles = {
     headerImageStyle: {
         display: "flex", 
         flex: 1, 
-        height: 150, 
-        background: "blue"
+        height: 150,
     },
     profileContent: {
         display: "flex",
