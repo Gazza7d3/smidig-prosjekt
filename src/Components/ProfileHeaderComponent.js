@@ -1,4 +1,6 @@
 import React from 'react'
+import { ActivityButtons, ReadMoreButton } from './ButtonComponents'
+import { ProfileHeaderComponentStyles, NiceComponentWhichIsVeryNice } from './ComponentStyles'
 
 const ProfileHeaderComponent = () => {
     return (
@@ -46,45 +48,18 @@ const ProfileHeaderComponent = () => {
                             <p style={ProfileHeaderComponentStyles.statsAndDonationBar.descriptionTextStyle}>Total donations</p>
                         </div>
                     </div>
+                <ActivityButtons text={"Water projects"} icon={<svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.7" d="M1 5L8 1L19 5M1 5V10L12 14L19 10V5M1 5L12 9L19 5" stroke="#4A4642" stroke-width="2" stroke-linejoin="round"/>
+</svg>
+} color={"#709E9B"}></ActivityButtons>
+                <ActivityButtons text={"Education"} icon={"water.svg"} color={"#EDCBB1"}></ActivityButtons>
+                <ActivityButtons text={"Other"} icon={"water.svg"} color={"#E2E2E8"}></ActivityButtons>
+                {/* <ReadMoreButton></ReadMoreButton> */}
                 </div>
         </div>
     )
 }
 
-const ProfileHeaderComponentStyles = {
-    headerImageStyle: {
-        display: "flex", 
-        flex: 1, 
-        height: 150,
-    },
-    profileContent: {
-        display: "flex",
-        flex: 1,
-        justifyContent: "center",
-    },
-    statsAndDonationBar: {
-        numbersAndDescription: {
-            display: "flex", 
-            justifyContent: "center", 
-            flexDirection: "column", 
-            alignItems: "center",
-            paddingLeft: 10,
-            paddingRight: 10
-        },
-        statTextStyle: {
-            fontSize: 18,
-            fontWeight: "bold"
-        },
-        descriptionTextStyle: {
-            fontSize: 10
-        },
-        statsAndDonationBarDivider: {
-            height: "100%", 
-            width: 1, 
-            background: "black"
-        }
-    }
-    
-}
+
 
 export default ProfileHeaderComponent
