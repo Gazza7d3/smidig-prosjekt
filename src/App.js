@@ -60,7 +60,7 @@ const monthlySubscriptionPlan = {
 
 const yearlySubscriptionPlan = {
   price: "89.99",
-  duration: "Anually",
+  duration: "Annually",
   firstdot: "Access to every organisation", 
   seconddot: "Donation limit uncapped", 
   thirddot: "Donation statistics", 
