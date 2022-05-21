@@ -3,6 +3,7 @@ import SmallCharityCard from "./Components/SmallCharityCard";
 import icon from "./images/icon.jpeg"
 import icon2 from "./images/bk.webp"
 import ProfileHeaderComponent from "./Components/ProfileHeaderComponent";
+import { SubscriptionPlan } from "./Components/SubscriptionPlan";
 
 
 
@@ -10,9 +11,8 @@ import ProfileHeaderComponent from "./Components/ProfileHeaderComponent";
 
 function App() {
   return (
-    <div style={{display: "flex", flex: 1, justifyContent: "center"}}>
-      <SmallCharityCard {...mySmallElement}/>
-      <ProfileHeaderComponent></ProfileHeaderComponent>
+    <div style={{display: "flex", flex: 2, justifyContent: "center"}}>
+        <SubscriptionPlan {...monthlySubscriptionPlan}/>
     </div>
   );
 }
@@ -46,3 +46,8 @@ const mySmallElement = {
   moneyraised: 3500,
   image: icon2
 };
+
+const monthlySubscriptionPlan = {
+  price: "10.49"
+}
+//time, firstdot, seconddot, thirddot, fourthdot, fifthdot
