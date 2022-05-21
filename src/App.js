@@ -48,6 +48,12 @@ const mySmallElement = {
 };
 
 const monthlySubscriptionPlan = {
-  price: "10.49"
+  price: "10.49",
+  duration: "Monthly",
+  firstdot: "Access to every organisation", 
+  seconddot: "Donation limit uncapped", 
+  thirddot: "Donation statistics", 
+  fourthdot: "Badges", 
+  fifthdot: "Premium support"
 }
 //time, firstdot, seconddot, thirddot, fourthdot, fifthdot
