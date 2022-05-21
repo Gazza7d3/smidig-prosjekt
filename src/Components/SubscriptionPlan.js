@@ -1,3 +1,5 @@
+import { ActivityButtons } from "./ButtonComponents"
+import { ActionButton } from "./ButtonComponents"
 
 export const SubscriptionPlan = ({price, duration, firstdot, seconddot, thirddot, fourthdot, fifthdot}) => {
     return (
@@ -8,13 +10,15 @@ export const SubscriptionPlan = ({price, duration, firstdot, seconddot, thirddot
             </div>
             <div style={SubscriptionPlanStyles.planContent}>
                 <ul style={SubscriptionPlanStyles.list}>
-                    <li style={SubscriptionPlanStyles.listMember}>{firstdot}</li>
-                    <li style={SubscriptionPlanStyles.listMember}>{seconddot}</li>
-                    <li style={SubscriptionPlanStyles.listMember}>{thirddot}</li>
-                    <li style={SubscriptionPlanStyles.listMember}>{fourthdot}</li>
-                    <li style={SubscriptionPlanStyles.listMember}>{fifthdot}</li>
+                    <li style={SubscriptionPlanStyles.listMember}><span style={SubscriptionPlanStyles.span}>{firstdot}</span></li>
+                    <li style={SubscriptionPlanStyles.listMember}><span style={SubscriptionPlanStyles.span}>{seconddot}</span></li>
+                    <li style={SubscriptionPlanStyles.listMember}><span style={SubscriptionPlanStyles.span}>{thirddot}</span></li>
+                    <li style={SubscriptionPlanStyles.listMember}><span style={SubscriptionPlanStyles.span}>{fourthdot}</span></li>
+                    <li style={SubscriptionPlanStyles.listMember}><span style={SubscriptionPlanStyles.span}>{fifthdot}</span></li>
                 </ul>
-                <button>Choose Plan</button>
+                <div style={SubscriptionPlanStyles.button}>
+                <ActionButton text="Choose plan"/>
+                </div>
             </div>
 
         </div>
@@ -27,13 +31,17 @@ export const SubscriptionPlanStyles = {
         flexDirection: "column",
         alignItems: "flex-start",
         padding: 0,
+        margin: 30,
         gap: 1,
 
         width: 304,
-        height: 409,
+        height: 420,
 
         border: "2px solid #CDD1D4",
         borderRadius: 10,
+
+        fontFamily: 'Euclid Circular B'
+
     },
     planHeader: {
         display: "flex",
@@ -70,7 +78,7 @@ export const SubscriptionPlanStyles = {
         width: "109px",
         height: "36px",
         
-        fontFamily: 'Euclid Circliar B',
+        fontFamily: 'Euclid Circular B',
         fontStyle: "normal",
         fontWeight: 600,
         fontSize: 36,
@@ -87,10 +95,10 @@ export const SubscriptionPlanStyles = {
         height: "21px",
 
 
-        fontFamily: 'Euclid Circliar B',
+        fontFamily: 'Euclid Circular B',
         fontStyle: "thin",
         fontWeight: 200,
-        fontSize: 16,
+        fontSize: "18px",
         lineHeight: "100%",
     },
 
@@ -99,7 +107,7 @@ export const SubscriptionPlanStyles = {
         flexDirection: "column",
         alignItems: "flex-start",
         
-        padding: "25px 32px",
+        padding: "25px 0px 0px 20px",
         gap: "24px",
 
         width: "240px",
@@ -108,15 +116,37 @@ export const SubscriptionPlanStyles = {
         background: "#FFFFFF",
         borderRadius: "0px 0px 10px 10px"
     },
-    list: {
+    span: {
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start",
-        padding:" 20px ",
         gap: "16px",
         //listStyle: "none",
 
         width: "240px",
-        height: "208px"
+        color: "black"
+    },
+        list: {
+        color: "#EDCBB1",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        paddingLeft: "30px",
+        paddingBottom: "0px",
+        gap: "16px",
+
+        width: "240px",
+
+    },
+    button: {
+
+        paddingTop: "10  px",
+        paddingLeft: "42px",
+
+
+
+        width: "224px",
+        height: "36px" 
+
     }
 }

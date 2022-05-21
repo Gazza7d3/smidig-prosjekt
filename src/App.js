@@ -13,6 +13,7 @@ function App() {
   return (
     <div style={{display: "flex", flex: 2, justifyContent: "center"}}>
         <SubscriptionPlan {...monthlySubscriptionPlan}/>
+        <SubscriptionPlan {...yearlySubscriptionPlan}/>
     </div>
   );
 }
@@ -56,4 +57,13 @@ const monthlySubscriptionPlan = {
   fourthdot: "Badges", 
   fifthdot: "Premium support"
 }
-//time, firstdot, seconddot, thirddot, fourthdot, fifthdot
+
+const yearlySubscriptionPlan = {
+  price: "89.99",
+  duration: "Anually",
+  firstdot: "Access to every organisation", 
+  seconddot: "Donation limit uncapped", 
+  thirddot: "Donation statistics", 
+  fourthdot: "Badges", 
+  fifthdot: "Premium support"
+}
