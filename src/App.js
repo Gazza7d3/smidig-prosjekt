@@ -4,6 +4,7 @@ import icon from "./images/icon.jpeg"
 import icon2 from "./images/bk.webp"
 import ProfileHeaderComponent from "./Components/ProfileHeaderComponent";
 import { ActionButton, NavButton } from "./Components/ButtonComponents";
+import { BadgeCard } from "./Components/BadgeCard";
 
 
 
@@ -12,10 +13,11 @@ import { ActionButton, NavButton } from "./Components/ButtonComponents";
 function App() {
   return (
     <div style={{display: "flex", flex: 1, justifyContent: "center"}}>
-    <NavButton text={"Explore"}></NavButton>
-    <NavButton text={"Activity"}></NavButton>
-    <NavButton text={"Resources"}></NavButton>
-    <NavButton text={"News"}></NavButton>
+    <BadgeCard badgetitle={"Insert Badge Title"}
+    text={"This is an example description of what the badge represent"} 
+    badgedate={"12/07/21"} 
+    badgegiver={"Redd Cross"}>
+    </BadgeCard>
     </div>
   );
 }
