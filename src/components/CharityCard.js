@@ -177,7 +177,6 @@ export const CharityCardStyles = {
     borderRadius: "10px"
   },
   colorbar: {
-    position: "absolute",
     /* width: 85% */
     width: "204px",
     height: "12px",

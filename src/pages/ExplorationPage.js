@@ -13,7 +13,7 @@ function ExplorationPage() {
       <body style={{display: "flex", flex: 1, justifyContent: "center"}}>
           <nav>Hey</nav>
           <header>Pic</header>
-          <div style={{width: "1300px", border: "1px solid black", borderColor: "black"}}>
+          <div style={{width: "1120px", border: "1px solid black", borderColor: "black"}}>
           <div style={{display: "flex", flex: 4, flexWrap: "wrap"}}>
               <CharityCard {...myElement}/>
               <CharityCard {...myElement}/>
