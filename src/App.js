@@ -6,6 +6,8 @@ import ProfileHeaderComponent from "./Components/ProfileHeaderComponent";
 import { ActionButton, NavButton } from "./Components/ButtonComponents";
 import { BadgeCard } from "./Components/BadgeCard";
 import ProfilePage from "./Screens/ProfilePage";
+import AboutUs from "./Components/AboutUs";
+import HowWeWork from "./Components/HowWeWork";
 
 
 
@@ -54,6 +56,12 @@ function App() {
 
   return (
     <div>
+    <AboutUs text={"We are a lorem ipsum ipsum lorem lololololo"}></AboutUs>
+    <HowWeWork text={"We are a lorem ipsum ipsum loremllsd lololololo"} ></HowWeWork>
+    </div>
+
+    /**
+    <div>
       <ProfilePage data={profileVolkswagen}></ProfilePage>
       <div style={{display: "flex", flex: 1, justifyContent: "center"}}>
       
@@ -70,8 +78,9 @@ function App() {
     text={"This is an example description of what the badge represent"} 
     badgedate={"12/07/21"} 
     badgegiver={"Red Cross"}>
-    </BadgeCard> */}
-    </div>
+    </BadgeCard> }
+    </div> 
+    */
   );
 }
 

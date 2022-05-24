@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.section {
+    width: 100%;
+    min-height: 439px;
+    background: #fff;
+}
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section {
+    float: left;
+    width: 55%;
+}
+.image-section {
+    float: right;
+    width: 40%;
+}
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+.content-section .title {
+    font-size: 28px;
+}
+.content-section .content p {
+    margin-top: 20px;
+    color: #000;
+    font-size: 17px;
+    line-height: 1.5;
+}
