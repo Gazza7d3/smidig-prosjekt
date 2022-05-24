@@ -37,37 +37,26 @@ export const BadgeCardStyles = {
     badgeWrapper: {
         width: "296px",
         height: "355px",
-        borderRadius: "10px",
+        borderRadius: "50px",
         background: "none",
         display: "flex",
         flex: 1,
+        background: "red",
+        overflow: "hidden",
         justifyContent: "center"
-    },
-    badgeImg: {
-        position: "absolute",
-        background: "rgba(255, 184, 0, 0.5)",
-        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-        backdropFilter: "blur(60px)",
-        top: "40px",
-        padding: "30px", 
-        borderRadius: "100%"
     },
     badgeInfoCard: {
         width: "296px",
         height: "277px",
         borderRadius: "15px",
-        position: "absolute",
-        top: "76px",
-        background: "rgba(255, 184, 0, 0.15)",
+        overflow: "hidden"
     }, 
     badgeDescription: {
         textAlign: "center",
-        position: "absolute",
         padding: "0 20px 0 20px",
         top: "35px"
     },
     badgeDateWrapper: {
-        position: "relative",
         textAlign: "center",
         display: "flex",
         padding: "20px",
@@ -81,5 +70,4 @@ export const BadgeCardStyles = {
         letterSpacing: "0.1em",
         margin: "0",
     }
-
 }

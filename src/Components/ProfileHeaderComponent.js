@@ -1,6 +1,6 @@
 import React from 'react'
 import { ActivityButtons, ActionButton } from './ButtonComponents'
-import { ProfileHeaderComponentStyles, NiceComponentWhichIsVeryNice } from './ComponentStyles'
+import { ProfileHeaderComponentStyles } from './ComponentStyles'
 
 const ProfileHeaderComponent = () => {
     return (
