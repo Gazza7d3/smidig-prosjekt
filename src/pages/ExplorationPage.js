@@ -18,16 +18,16 @@ function ExplorationPage() {
         </main>
 
       <div style={{display: "flex", justifyContent: "center"}}>
-      <div style={{width: "1120px"}}>
-          <div style={{display: "flex", flex: 4, flexWrap: "wrap", justifyContent: "center"}}>
-              <CharityCard {...myElement}/>
-              <CharityCard {...myElement}/>
-              <CharityCard {...myNewElement}/>
-              <CharityCard {...myNewElement}/>
-              <CharityCard {...myNewElement}/>
-              <CharityCard {...myNewElement}/>
+        <div style={{width: "1120px"}}>
+            <div style={{display: "flex", flex: 4, flexWrap: "wrap", justifyContent: "center"}}>
+                <CharityCard {...myElement}/>
+                <CharityCard {...myElement}/>
+                <CharityCard {...myNewElement}/>
+                <CharityCard {...myNewElement}/>
+                <CharityCard {...myNewElement}/>
+                <CharityCard {...myNewElement}/>
               </div>
-          </div>
+            </div>
           </div>
       </body>
     );

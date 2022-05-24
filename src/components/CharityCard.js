@@ -15,18 +15,21 @@ function CharityCard({image, title, daysleft, completeness, description}) {
         <p>∙</p>
         <p>{completeness}0% complete</p>
       </div>
-      <h1 style={CharityCardStyles.cardtitle}>{title}</h1>
+      
+      <div>
+        <h1 style={CharityCardStyles.cardtitle}>{title}</h1>
+        <p style={CharityCardStyles.carddescription}>{description}
+          <p style={CharityCardStyles.readmore}>Read more</p>
+        </p>
+      </div>
 
-      <p style={CharityCardStyles.carddescription}>{description}
-        <p style={CharityCardStyles.readmore}>Read more</p>
-      </p>
-      <>
-      <DonationButton text="Make a donation" />
-      </>
-      <>
+      <div style={CharityCardStyles.barsNbutton}>
         <div style={CharityCardStyles.greybar}></div>
         <div style={CharityCardStyles.colorbar}></div>
-      </>
+        <DonationButton text="Make a donation" />
+      </div>
+
+
     </div>
   );
 }
@@ -122,17 +125,19 @@ export const CharityCardStyles = {
     gap: "16px",
 
     width: "264px",
-    height: "193px",
+    height: "155px",
 
     flex: "none",
     order: 1,
     flexGrow: 0
   },
   readmore: {
-    position: "absolute",
+
     top: "540px",
     width: "264px",
     height: "22px",
+    margin: 0,
+    padding: 0,
 
     fontFamily: 'Euclid Circular B',
     fontStyle: "normal",
@@ -163,28 +168,48 @@ export const CharityCardStyles = {
     fontWeight: 600,
     fontSize: "18px",
     lineHeight: "100%",
-
-
   },
   greybar: {
-    position: "absolute",
+
     width:" 264px",
     height: "12px",
     
     top: "592px",
     
     background: "#ECECEC",
-    borderRadius: "10px"
+    borderRadius: "10px",
+
+
+    backgroundColor: "#ECECEC",
+    gridRowStart: "1",
+    gridColumnStart: 1,
+
+    marginBottom: 22
   },
   colorbar: {
     /* width: 85% */
     width: "204px",
     height: "12px",
-    top: "592px",
-    marginLeft: "-58px",
+    top: "892px",
+
 
     
     background: "linear-gradient(270deg, #EDCBB1 -21.94%, #709E9B 82.37%)",
-    borderRadius: "10px"
+    borderRadius: "10px",
+
+
+
+    gridRowStart: "1",
+    gridColumnStart: 1
   },
+  barsNbutton: {
+    display: "grid",
+    gridTemplateColumns: "1fr"
+  },
+  barsOverlap: {
+    padding: "50px",
+    backgroundColor: "rgba(0,0,0,0.5)",
+    gridRowStart: "1",
+    gridColumnStart: 1
+  }
 }
