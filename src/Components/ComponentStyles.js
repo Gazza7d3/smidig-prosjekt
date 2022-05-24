@@ -32,3 +32,11 @@ export const ProfileHeaderComponentStyles = {
         }
     }
 }
+
+export const CharityCardComponentStyles = {
+
+}
+
+export const SubscriptionPlanStyles = {
+    
+}

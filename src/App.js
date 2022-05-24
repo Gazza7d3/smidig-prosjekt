@@ -4,6 +4,7 @@ import icon from "./images/icon.jpeg"
 import icon2 from "./images/bk.webp"
 import ProfileHeaderComponent from "./Components/ProfileHeaderComponent";
 import { SubscriptionPlan } from "./Components/SubscriptionPlan";
+import ExplorationPage from "./pages/ExplorationPage";
 
 
 
@@ -11,10 +12,7 @@ import { SubscriptionPlan } from "./Components/SubscriptionPlan";
 
 function App() {
   return (
-    <div style={{display: "flex", flex: 2, justifyContent: "center"}}>
-        <SubscriptionPlan {...monthlySubscriptionPlan}/>
-        <SubscriptionPlan {...yearlySubscriptionPlan}/>
-    </div>
+    <ExplorationPage />
   );
 }
 
@@ -32,6 +30,11 @@ export default App;
 
 
 //<CharityCard {...myElement}/> 
+
+/* SubscriptionPlan
+        <SubscriptionPlan {...monthlySubscriptionPlan}/>
+        <SubscriptionPlan {...yearlySubscriptionPlan}/>
+*/
 const myElement = {
   title: "Education 4All",
   description: "Our donation goal of building 10 more schools in Africa has been achieved. Meloria Impact are grateful for all...",
