@@ -30,6 +30,7 @@ gap: "8px",
 
 width: "264px",
 height: "50px",
+backgroundColor: "#FFFFFF",
 
 border: "1px solid #CDD1D4",
 borderRadius: "28px",

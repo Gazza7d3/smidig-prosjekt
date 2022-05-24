@@ -2,7 +2,8 @@ import CharityCard from "../Components/CharityCard";
 import icon from "../images/icon.jpeg"
 import icon2 from "../images/bk.webp"
 import hero from "../images/Hero.png"
-import styled from 'styled-components';
+
+
 
 
 
@@ -11,11 +12,17 @@ import styled from 'styled-components';
 
 function ExplorationPage() {
     return (
-      <body>
+      <body style={{backgroundColor: "#f7f7f7"}}>
         <main>
         <img style={ExploarationStyles.hero} src={hero} />
         <h1 style={{display: "flex", justifyContent: "center"}}>Explore Charities</h1>
         </main>
+
+        <div style={{display: "flex", justifyContent: "center", gap: "30px"}}>
+          <a href="www.google.com">All</a>
+          <a href="www.google.com">Education</a>
+          <a href="www.google.com">Water</a>
+        </div>
 
       <div style={{display: "flex", justifyContent: "center"}}>
         <div style={{width: "1120px"}}>

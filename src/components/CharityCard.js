@@ -3,6 +3,7 @@ import buildingicon from "../images/building-icon.png"
 import { ActionButton, DonationButton } from "./ButtonComponents";
 
 
+
 function CharityCard({image, title, daysleft, completeness, description}) {
   
   return (
@@ -48,7 +49,7 @@ export const CharityCardStyles = {
     width: "312px",
     height: "674px",
     
-    background: "#fff3f3",
+    background: "#FFFFFF",
     boxShadow: "0px 24px 64px rgba(0, 0, 0, 0.06)",
     borderRadius: "10px",
     flex: 1
@@ -71,8 +72,9 @@ export const CharityCardStyles = {
     position: "absolute",
     width: "115px",
     height: "20px",
-    left: "24px",
-    top: "256px",
+    paddingTop: "250px",
+    paddingRight: "150px",
+
 
     fontFamily: 'Euclid Circular B',
     fontStyle: "normal",
