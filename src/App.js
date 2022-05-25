@@ -3,6 +3,7 @@ import SmallCharityCard from "./Components/SmallCharityCard";
 import icon from "./images/icon.jpeg"
 import icon2 from "./images/bk.webp"
 import ProfileHeaderComponent from "./Components/ProfileHeaderComponent";
+import About from "./Components/About";
 
 
 
@@ -13,6 +14,7 @@ function App() {
     <div style={{display: "flex", flex: 1, justifyContent: "center"}}>
       <SmallCharityCard {...mySmallElement}/>
       <ProfileHeaderComponent></ProfileHeaderComponent>
+      <About/>
     </div>
   );
 }
