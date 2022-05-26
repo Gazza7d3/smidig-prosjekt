@@ -6,6 +6,7 @@ import '@videojs/themes/dist/sea/About.css';
 
 
 
+
 const VideoJS = ({ options, themeName= 'sea'}) => {
 
     const videoRef = useRef(null);

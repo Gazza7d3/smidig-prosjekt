@@ -42,5 +42,17 @@
   "devDependencies": {
     "prettier": "^2.6.2",
     "video.js": "^7.19.2"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gazza7d3/smidig-prosjekt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gazza7d3/smidig-prosjekt/issues"
+  },
+  "homepage": "https://github.com/Gazza7d3/smidig-prosjekt#readme"
 }
