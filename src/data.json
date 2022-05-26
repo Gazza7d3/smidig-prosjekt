@@ -1,0 +1,30 @@
+[{
+    "id": "1",
+    "image": "images/anonymousW.png",
+    "first_name": "Acacia",
+    "middle_name": "Christel",
+    "sure_name": "De Meo",
+    "title": "COB",
+    "about": "This is the space to write about what Acacia has done!"
+},
+{
+    "id": "2",
+    "image": "images/anonymousW.png",
+    "first_name": "Mara",
+    "middle_name": "Andrea",
+    "sure_name": "Lehmann",
+    "title": "VCOB",
+    "about": "This is the space to write about what Mara has done!"
+
+},
+{
+    "id": "3",
+    "image": "images/anonymousW.png",
+    "first_name": "Third",
+    "middle_name": "Boris",
+    "sure_name": "Person",
+    "title": "CEO",
+    "about": "This is the space to write about what third has done!"
+
+}
+]
