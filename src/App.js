@@ -1,3 +1,4 @@
+import React from "react";
 import CharityCard from "./Components/CharityCard";
 import SmallCharityCard from "./Components/SmallCharityCard";
 import icon from "./images/icon.jpeg"
