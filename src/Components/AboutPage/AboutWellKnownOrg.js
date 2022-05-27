@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import logo from "./Images/Logo5.png";
 
 const AboutWellKnownOrg = () => {
@@ -23,4 +23,4 @@ const AboutWellKnownOrg = () => {
   )
 }
 
-export default AboutWellKnownOrg
+export default AboutWellKnownOrg;

@@ -17,4 +17,4 @@ Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse place
   )
 }
 
-export default About3Frame
+export default About3Frame;
