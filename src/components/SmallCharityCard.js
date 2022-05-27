@@ -1,3 +1,4 @@
+import React from 'react';
 import SmallCharity from "../css/SmallCharity.css"
 import buildingicon from "../images/building-icon.png"
 
